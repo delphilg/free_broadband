@@ -6,43 +6,88 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 172.64.42.85
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.202.235
+  port: 443
+  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ez-4b5fd4.appelidmymat.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /sync
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: ez-4b5fd4.appelidmymat.workers.dev
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 172.64.229.2
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.22.180
+  port: 443
+  uuid: 33918b20-9e02-4dc6-8b30-79b2d4b2e0e6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: aUto-scaLe-238B2B.inFra-coRE-1630dD.WorKerS.DeV
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: aUto-scaLe-238B2B.inFra-coRE-1630dD.WorKerS.DeV
 - name: 🇨🇿 CZ 03 - xiaohe
   type: vless
-  server: 162.159.24.131
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.133.170
+  port: 2096
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /sync
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: peekconfigg.vipserver1-39d.workers.dev
+- name: 🇨🇿 CZ 04 - xiaohe
+  type: vless
+  server: 104.21.8.176
+  port: 443
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
+- name: 🇨🇿 CZ 05 - xiaohe
+  type: vless
+  server: 188.114.97.8
+  port: 8443
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
+- name: 🇨🇿 CZ 06 - xiaohe
+  type: vless
+  server: 139.64.235.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +96,9 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
+  - 🇨🇿 CZ 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +107,8 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
+  - 🇨🇿 CZ 06 - xiaohe
 rules:
 - MATCH,PROXIES
