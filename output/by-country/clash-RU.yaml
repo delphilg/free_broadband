@@ -13,18 +13,18 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 188.225.25.71
+  server: 81.90.31.111
   port: 443
-  uuid: b3a7fe26-2ea7-4aa1-ba7a-8ef37a1a71c5
+  uuid: d78d6815-5f00-4fe3-8aae-3344aeb7783f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: s3-ge.videocdnpink.video
+  servername: 1f0c1c7297521d51.wgse.info
   network: ws
   ws-opts:
-    path: /api/53d53ac3/a7fa61/096357bebc62
+    path: /ws
     headers:
-      Host: s3-ge.videocdnpink.video
+      Host: 1f0c1c7297521d51.wgse.info
 proxy-groups:
 - name: PROXIES
   type: select
