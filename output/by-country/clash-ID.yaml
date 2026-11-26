@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - xiaohe
+- name: 🇮🇩 ID 01 - xiaohe
   type: vless
-  server: 84.32.209.118
+  server: 172.64.147.85
   port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-dns-gw.galioncc.com
-  client-fingerprint: chrome
+  servername: wallweb-4r0.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4r0.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - xiaohe
+  - 🇮🇩 ID 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - xiaohe
+  - 🇮🇩 ID 01 - xiaohe
 rules:
 - MATCH,PROXIES
