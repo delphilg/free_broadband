@@ -6,29 +6,45 @@ log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - xiaohe
   type: vless
-  server: 104.17.28.83
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  server: 162.159.254.201
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: whitecreeper.pages.dev
+  servername: freeceshi6.frii.site
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
     headers:
-      Host: whitecreeper.pages.dev
+      Host: freeceshi6.frii.site
+- name: 🇮🇩 ID 02 - xiaohe
+  type: vless
+  server: 162.159.254.201
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: freeceshi6.frii.site
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
+    headers:
+      Host: freeceshi6.frii.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇩 ID 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇩 ID 02 - xiaohe
 rules:
 - MATCH,PROXIES
